@@ -1,0 +1,10 @@
+.element__container {
+  background: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 79px;
+  padding-left: 21px;
+  padding-right: 15px;
+}
