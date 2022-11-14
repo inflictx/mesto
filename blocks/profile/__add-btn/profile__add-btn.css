@@ -6,4 +6,10 @@
   margin: auto 0;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.profile__add-btn:hover {
+  opacity: 0.6;
+  cursor: pointer;
 }

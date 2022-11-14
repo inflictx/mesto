@@ -1,4 +1,6 @@
 .element {
+  overflow: hidden; /* - что бы контент внутренний не торчал из скругленных углов. */
+  border-radius: 10px;
   list-style: none;
   line-height: 0;
   max-width: 282px;

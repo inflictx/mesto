@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mesto</title>
   <link rel="stylesheet" href="./pages/index.css">
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
 
 <body class="body">
@@ -24,10 +25,10 @@
           <div class="profile__info">
             <h1 class="profile__title">Ёжик Мистер Поки</h1>
             <h2 class="profile__subtitle">Отважный путешественник</h2>
-            <div class="profile__edit-btn"></div>
+            <button class="profile__edit-btn"></button>
           </div>
         </container>
-        <div class="profile__add-btn"></div>
+        <button class="profile__add-btn"></button>
       </section>
 
       <section class="elements">
@@ -75,10 +76,28 @@
               <div class="element__like"></div>
             </div>
           </li>
-
         </ul>
       </section>
     </main>
+    <footer class="footer">
+      <h2 class="footer__title">
+        &#169; 2022 Mesto Russia
+      </h2>
+    </footer>
+    <div class="popup">
+      <div class="popup__container">
+        <h2 class="popup__title">Редактировать профиль</h2>
+        <form name="edit-profile" class="popup__form">
+          <input type="text" placeholder="Имя" name="name" value="" required autocomplete="off" class="popup__input">
+          <input type="text" placeholder="О себе" name="about" required class="popup__input" autocomplete="off">
+          <button type="submit" class="popup__save-button">
+            Сохранить
+          </button>
+        </form>
+      </div>
+    </div>
+
+
   </div>
 </body>
 
