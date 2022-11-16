@@ -5,3 +5,15 @@
   gap: 12px 18px;
   max-width: 500px;
 }
+
+@media screen and (max-width: 590px) {
+  .profile__info {
+    gap: 14px 10px;
+    padding: 26px 0 26px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .profile__info {
+    max-width: 260px;
+  }
+}
