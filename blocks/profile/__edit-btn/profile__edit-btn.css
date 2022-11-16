@@ -3,9 +3,10 @@
   width: 24px;
   height: 24px;
   align-self: center;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-top: 5px;
+  /* margin-top: 5px; */
   background-color: transparent;
   border: 1px solid white;
 }

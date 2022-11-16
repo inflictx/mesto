@@ -1,7 +1,7 @@
 //Получаем элементы со страницы и сохраняем в переменные.
 const popup = document.querySelector(".popup");
-const closePopup = popup.querySelector(".popup__close_button");
-const submiteButton = popup.querySelector(".popup__save_button");
+const closePopup = popup.querySelector(".popup__close-btn");
+const submiteButton = popup.querySelector(".popup__save-btn");
 
 const profile__info = document.querySelector(".profile__info");
 const profile__title = profile__info.querySelector(".profile__title");

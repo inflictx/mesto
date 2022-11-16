@@ -3,13 +3,20 @@
   font-size: 18px;
   line-height: 22px;
   color: #545454;
-  padding: 66px 19px 60px 19px;
+  padding: 66px 19px 60px 0px;
   margin: 0 auto;
   max-width: 880px;
 }
 
+@media screen and (max-width: 890px) {
+  .footer__title {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 590px) {
   .footer__title {
+    text-align: start;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
