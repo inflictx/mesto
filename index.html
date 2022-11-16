@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="RU">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesto</title>
+  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+  <script src="./scripts/main.js" defer></script>
+</head>
+
+<body class="body">
+  <div class="page">
+
+    <!-- header -->
+
+    <header class="header">
+      <img src="./images/logo.svg" alt="Логотип Место" class="header__logo">
+    </header>
+    <main class="content">
+      <section class="profile">
+        <container class="profile__inner">
+          <div class="profile__avatar"></div>
+          <div class="profile__info">
+            <h1 class="profile__title">Ёжик Мистер Поки</h1>
+            <h2 class="profile__subtitle">Отважный путешественник</h2>
+            <button type="button" class="profile__edit-btn" aria-label="Редактировать"></button>
+          </div>
+        </container>
+        <button type="button" class="profile__add-btn" aria-label="Добавить"></button>
+      </section>
+
+      <section class="elements">
+        <ul class="elements__inner">
+          <li class="element">
+            <img src="./images/1.jpg" alt="ёж на фоне парижской башни" class="element__image">
+            <div class="element__container">
+              <h2 class="element__title">Париж </h2>
+              <button type="button" aria-label="Лайк" class="element__like"></button>
+            </div>
+          </li>
+          <li class="element">
+            <img src="./images/2.jpg" alt="Ёж на шапке, на коленях" class="element__image">
+            <div class="element__container">
+              <h2 class="element__title">Вид со скалы</h2>
+              <button type="button" aria-label="Лайк" class="element__like"></button>
+            </div>
+          </li>
+          <li class="element">
+            <img src="./images/3.jpg" alt="Ёж и Бенгальский кот на фоне скалы, в руках" class="element__image">
+            <div class="element__container">
+              <h2 class="element__title">Уиииии!!!</h2>
+              <button type="button" aria-label="Лайк" class="element__like"></button>
+            </div>
+          </li>
+          <li class="element">
+            <img src="./images/4.jpg" alt="Ёж и кот выглядывают из сумки" class="element__image">
+            <div class="element__container">
+              <h2 class="element__title">Озеро</h2>
+              <button type="button" aria-label="Лайк" class="element__like"></button>
+            </div>
+          </li>
+          <li class="element">
+            <img src="./images/5.jpg" alt="Ёж и кот на фоне замка" class="element__image">
+            <div class="element__container">
+              <h2 class="element__title">Замок в Дании</h2>
+              <button type="button" aria-label="Лайк" class="element__like"></button>
+            </div>
+          </li>
+          <li class="element">
+            <img src="./images/6.jpg" alt="Ёж в вязанной шапочке в ладони, на фоне жёлтых листьев" class="
+              element__image">
+            <div class="element__container">
+              <h2 class="element__title">Осень оаоаоа</h2>
+              <button type="button" aria-label="Лайк" class="element__like"></button>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <h2 class="footer__title">
+        &#169; 2022 Mesto Russia
+      </h2>
+    </footer>
+    <div class="popup">
+      <div class="popup__container">
+        <h2 class="popup__title">Редактировать профиль</h2>
+        <form name="edit-profile" class="popup__form">
+          <input type="text" placeholder="Имя" name="name" id="name" required autocomplete="off" class="popup__input">
+          <input type="text" placeholder="О себе" name="about" id="about" required class="popup__input"
+            autocomplete="off">
+          <button type="submit" aria-label="Сохранить" class="popup__save_button">
+            Сохранить
+          </button>
+        </form>
+        <button type="button" aria-label="Закрыть" class="popup__close_button">
+        </button>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+
+</html>
