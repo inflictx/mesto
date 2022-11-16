@@ -1,6 +1,6 @@
 # Проект MESTO
 
-[Deploy :eyes:]()
+[Deploy :eyes:](https://inflictx.github.io/mesto/)
 
 ### Яндекс Практикум
 
