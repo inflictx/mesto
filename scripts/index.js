@@ -7,7 +7,7 @@ const profile__info = document.querySelector(".profile__info");
 const profile__title = profile__info.querySelector(".profile__title");
 const profile__subtitle = profile__info.querySelector(".profile__subtitle");
 const openButton = profile__info.querySelector(".profile__edit-btn");
-const popup__form = popup.querySelector(".popup__form");
+const popupForm = popup.querySelector(".popup__form");
 const name = popup.querySelector("#name");
 const about = popup.querySelector("#about");
 
@@ -36,14 +36,14 @@ openButton.addEventListener("click", openPopup);
 //Удаляем класс по клику на кнопку 'закрыть'
 closePopup.addEventListener("click", closePop);
 //Удаляем класс по клику на кнопку 'Сохранить'
-popup__form.addEventListener("submit", formSubmitHandler);
+popupForm.addEventListener("submit", formSubmitHandler);
 
 //Лайки
-const likes = document.querySelectorAll(".element__like");
+/* const likes = document.querySelectorAll(".element__like");
 
 function changeLike(evt) {
   evt.target.classList.toggle("element__like_active");
 }
 for (let i = 0; i < likes.length; i++) {
   likes[i].addEventListener("click", changeLike);
-}
+} */
