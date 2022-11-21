@@ -39,11 +39,30 @@ closePopup.addEventListener("click", closePop);
 popupForm.addEventListener("submit", formSubmitHandler);
 
 //Лайки
-/* const likes = document.querySelectorAll(".element__like");
-
+const likes = document.querySelectorAll(".element__like");
 function changeLike(evt) {
   evt.target.classList.toggle("element__like_active");
 }
-for (let i = 0; i < likes.length; i++) {
-  likes[i].addEventListener("click", changeLike);
-} */
+likes.forEach((like) => {
+  like.addEventListener("click", changeLike);
+});
+
+//второе окно
+const popup2 = document.querySelector(".popup2");
+const closePopup2 = popup2.querySelector(".popup__close-btn2");
+const openButton2 = document.querySelector(".profile__add-btn");
+const popupForm2 = popup2.querySelector(".popup__form");
+const name2 = popup2.querySelector("#name2");
+const about2 = popup2.querySelector("#about2");
+
+function openPopup2() {
+  popup2.classList.add("popup_opened");
+}
+
+function closePop2() {
+  popup2.classList.remove("popup_opened");
+}
+
+openButton2.addEventListener("click", openPopup2);
+//Удаляем класс по клику на кнопку 'закрыть'
+closePopup2.addEventListener("click", closePop2);

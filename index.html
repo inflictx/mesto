@@ -100,6 +100,31 @@
       </form>
     </div>
   </div>
+  <div class="popup popup2">
+    <div class="popup__container popup__container2">
+      <button type="button" aria-label="Закрыть" class="popup__close-btn popup__close-btn2"></button>
+      <h2 class="popup__title popup__title2">Добавить картинку</h2>
+      <form name="edit-profile" class="popup__form popup__form2">
+        <input type="text" placeholder="Вставьте ссылку" name="name" id="name2" required autocomplete="off"
+          class="popup__input popup__input1">
+        <input type="text" placeholder="Добавьте описание" name="about2" id="about2" required
+          class="popup__input popup__input2" autocomplete="off">
+        <button type="submit" aria-label="Сохранить" class="popup__save-btn popup__save-btn2">
+          Сохранить
+        </button>
+      </form>
+    </div>
+  </div>
+  <template class="template" id="template">
+    <li class="element">
+      <img src='' alt="" class="element__image">
+      <div class="element__container">
+        <h2 class="element__title"></h2>
+        <button type="button" aria-label="Лайк" class="element__like"></button>
+      </div>
+    </li>
+  </template>
+
 </body>
 
 </html>
